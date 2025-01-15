@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI powered Fitness App</h1>
+        <form id="fitness-form">
+            <label for="weight">weight (in kg)</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="height">height (in cm)</label>
+            <input type="number" id="height" name="height" required>
+
+            <label for="activity">Activity Level:</label>
+            <select id="activity">
+            <option value="sedenrary">sedentary</option>
+            <option value="lightly active">lightly Active</option>
+            <option value="sedenrary">Moderately Active</option>
+            <option value="sedenrary">Very Active</option>
+        </select>
+        <button type="submit">Get AI Recommendation</button>
+        <h6 class="copyright">Powered by Google Flash AI</h6>
+        </form>
+        <div id="results"></div>
+        <div class="loading-indicator">
+            <div class="spinner-border" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
