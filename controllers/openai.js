@@ -2,7 +2,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const express = require('express');
 
 // Initialize Google Generative AI
-const genAI = new GoogleGenerativeAI('AIzaSyD-O_0TUKd1DTVWh7zc0rSHSC_jFyDTKmI'); // Replace with your Google API key
+const genAI = new GoogleGenerativeAI('API KEY HERE'); // Replace with your Google API key
 const model = genAI.getGenerativeModel({ model: "gemini-pro" }); // Use the Gemini Pro model
 
 const router = express.Router();
